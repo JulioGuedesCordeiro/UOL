@@ -3,7 +3,7 @@
 ## Versão do Node Utilizada v12.13.0
 
 ## Subindo aplicação
-    1. A aplicação está usando como banco o PG, as informações de conecção devem ser inseridas no arquivo .env
+    1. A aplicação está usando como banco o PG, as informações de conexão devem ser inseridas no arquivo .env
     2. Para rodar as migrações, rodar *npm run migrate:up*
     3. Rodando a aplicação *npm run serve*
 
