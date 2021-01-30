@@ -1,0 +1,45 @@
+{
+  "name": "uol",
+  "version": "0.0.1",
+  "description": "Prova de Conhecimento Uol",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "mocha",
+    "babel-node": "babel-node",
+    "serve": "nodemon --exec npm run babel-node ./src/server.js",
+    "migrate:make": "knex migrate:make",
+    "migrate:up": "knex migrate:latest",
+    "migrate:down": "knex migrate:rollback",
+    "seed:run": "knex seed:run",
+    "seed:make": "knex seed:make"
+  },
+  "author": "Júlio Guedes",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bookshelf": "^1.2.0",
+    "bookshelf-eloquent": "^0.1.15",
+    "cors": "^2.8.5",
+    "dotenv": "^4.0.0",
+    "express": "^4.17.1",
+    "heroku": "^7.47.6",
+    "joi": "^17.3.0",
+    "joiptbr": "^1.0.1",
+    "knex": "^0.21.15",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1",
+    "supertest": "^6.1.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "request": "^2.88.2",
+    "should": "^13.2.3"
+  }
+}
